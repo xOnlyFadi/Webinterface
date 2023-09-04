@@ -2,8 +2,6 @@
 import { env } from '$env/dynamic/public';
 export const BASE_PATH = env.PUBLIC_BACKEND
 
-console.log("BASE_PATH: " + BASE_PATH)
-
 export function get(path: string) {
 
     return fetch(BASE_PATH + path, {
