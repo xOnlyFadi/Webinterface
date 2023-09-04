@@ -1,5 +1,6 @@
 
-export const BASE_PATH = process.env.BACKEND
+import { env } from '$env/dynamic/private'
+export const BASE_PATH = env.BACKEND
 
 export function get(path: string) {
 
