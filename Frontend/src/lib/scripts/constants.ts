@@ -1,6 +1,8 @@
 
-import { env } from '$env/dynamic/private'
-export const BASE_PATH = env.BACKEND
+import { env } from '$env/dynamic/public';
+export const BASE_PATH = env.PUBLIC_BACKEND
+
+console.log("BASE_PATH: " + BASE_PATH)
 
 export function get(path: string) {
 
