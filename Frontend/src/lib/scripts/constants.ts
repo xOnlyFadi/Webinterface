@@ -1,4 +1,5 @@
-export const BASE_PATH = "https://api.ree6.de"
+
+export const BASE_PATH = process.env.BACKEND
 
 export function get(path: string) {
 
